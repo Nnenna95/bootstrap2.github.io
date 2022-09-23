@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    line-height: 1.8;
+    color: azure;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: blue;
+}
+a{
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+img{
+    width: 100%;
+}
+.navbar .nav-link{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.navbar{
+    border-bottom: 1px solid rgba(25, 23, 23, 0.126);
+}
+.logo-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* font-weight: bold; */
+    color: blue !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: palevioletred;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: brown;
+}
+section{
+    padding: 100px;
+    padding-bottom: 100px;
+}
+#home{
+    
+    background: linear-gradient(rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0.8)), 
+    url("laptop_img jpeg.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+#home h1{
+    font-weight: 700;
+}
+#home p{
+    max-width: 500px;
+    margin: 18px auto;
+}
+ .btn.btn-brand{
+    font-weight: 850;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px;
+    background-color: hotpink;
+    color: white;
+}
+.btn-brand:hover{
+ background-color: aqua;
+ color: white;
+}
+.section-intro{
+    text-align: center;
+}
+.title-sm{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.section-intro .hline{
+    width: 120px;
+    height: 2px;
+    background-color: rgba(18, 15, 15, 0.566);
+    margin: 16px auto ;
+    
+}
+.iconbox{
+    width: 60px;
+    height: 60px;
+    background-color: tomato;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex: none;
+}
+img{
+    width: auto;
+    height: 300px;
+}
+.portfolio-items{
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-img, .portfolio-items, .portfolio-overlay{
+    transition: all 0.4s ease;
+}
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+
+}
+.portfolio-overlay h3,
+.portfolio-overlay h6{
+    color: white;
+}
+.portfolio-items:hover .portfolio-overlay{
+    opacity: 0.8;
+}
+.portfolio-items:hover img{
+    transform: scale(1.1);
+}
+#features .iconbox{
+ width: 20px;
+ height: 20px;
+ border-radius:100%;
+ font-size: 15px;
+}
+.contact .img{
+    width: auto;
+    height: 200px;
+}
+.team-member{
+    background-color: blue;
+}
+.team-member .hline{
+    width: 70px;
+    height: 1px;
+    margin: 16px auto;
+    background-color: rgba(240, 248, 255, 0.29);
+}
+form .form-control{
+    border-radius: 0;
+}
+form .form-control:focus{
+    box-shadow: none;
+    border-color: salmon;
+}
+
+.team-member.team-member-img{
+    width: 270px;
+    height: 200px;
+
+}
+.team-member .team-member-img, img
+.team-member .team-member-img .social-icons{
+    transition: all 0.4sec ease;
+}
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.team-member .team-member-img .social-icons{
+    width: 100%;
+    height: 60px;
+    background-color: salmon;
+    bottom: -60px;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.team-member .team-member-img .social-icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    font-size: 24px;
+    color: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+
+
+}
+.team-member .team-member-img .social-icons a:hover{
+    background-color: aliceblue;
+    color: salmon;
+}
+.team-member:hover .team-member-img .social-icons{
+     bottom: 0;
+}
+.team-member:hover img{
+    transform: translatey(-60px);
+}
